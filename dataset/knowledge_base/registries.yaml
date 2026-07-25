@@ -1,0 +1,34 @@
+docker:
+  name: Docker Official Images
+  url: https://hub.docker.com
+  trusted: true
+  enterprise_support: false
+  priority: 90
+
+redhat:
+  name: Red Hat Ecosystem Catalog
+  url: https://catalog.redhat.com
+  trusted: true
+  enterprise_support: true
+  priority: 98
+
+chainguard:
+  name: Chainguard Images
+  url: https://images.chainguard.dev
+  trusted: true
+  enterprise_support: true
+  priority: 97
+
+distroless:
+  name: Google Distroless
+  url: https://github.com/GoogleContainerTools/distroless
+  trusted: true
+  enterprise_support: false
+  priority: 95
+
+microsoft:
+  name: Microsoft Container Registry
+  url: https://mcr.microsoft.com
+  trusted: true
+  enterprise_support: true
+  priority: 96

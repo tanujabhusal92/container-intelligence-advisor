@@ -1,0 +1,69 @@
+weights:
+
+  registry_priority: 2
+
+  enterprise: 25
+
+  security: 25
+
+  shell: 10
+
+  native_dependencies: 10
+
+  orchestrator: 15
+
+  image_size: 15
+
+security:
+
+  low:
+    docker: 10
+
+  medium:
+    docker: 20
+
+  high:
+    redhat: 30
+    chainguard: 35
+    distroless: 30
+
+enterprise:
+
+  true:
+    redhat: 40
+    microsoft: 25
+
+environment:
+
+  production:
+    redhat: 25
+    chainguard: 20
+    distroless: 20
+
+  development:
+    docker: 25
+    microsoft: 25
+
+shell:
+
+  required:
+    docker: 10
+    redhat: 10
+    microsoft: 10
+
+  not_required:
+    chainguard: 15
+    distroless: 15
+
+image_size:
+
+  small:
+    distroless: 20
+    chainguard: 20
+
+  balanced:
+    docker: 10
+
+  performance:
+    docker: 15
+    redhat: 15

@@ -1,0 +1,25 @@
+constraints:
+
+  enterprise:
+    require:
+      - enterprise
+
+  fips:
+    require:
+      - fips
+
+  no_shell:
+    disallow:
+      - shell
+
+  native_dependencies:
+    require:
+      - native_dependencies
+
+  openshift:
+    orchestrator:
+      - OpenShift
+
+  kubernetes:
+    orchestrator:
+      - Kubernetes

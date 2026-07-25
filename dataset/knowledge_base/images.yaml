@@ -1,0 +1,274 @@
+images:
+
+# ------------------------
+# PYTHON
+# ------------------------
+
+  - id: python-official
+    language: Python
+    registry: docker
+    image: python
+
+    variants:
+      production:
+        - slim-bookworm
+        - slim
+
+      development:
+        - bookworm
+        - latest
+
+    supports:
+      enterprise: false
+      security: medium
+      shell: true
+      native_dependencies: true
+      fips: false
+
+    orchestrators:
+      - Docker
+      - Kubernetes
+
+    strengths:
+      - Official Docker image
+      - Stable Debian base
+      - Large community
+
+  - id: python-chainguard
+
+    language: Python
+
+    registry: chainguard
+
+    image: python
+
+    variants:
+      production:
+        - latest
+
+    supports:
+      enterprise: false
+      security: very_high
+      shell: false
+      native_dependencies: false
+      fips: false
+
+    orchestrators:
+      - Kubernetes
+
+    strengths:
+      - Minimal attack surface
+      - Low CVEs
+      - Secure by default
+
+  - id: python-ubi
+
+    language: Python
+
+    registry: redhat
+
+    image: ubi9/python-312
+
+    variants:
+      production:
+        - minimal
+
+    supports:
+      enterprise: true
+      security: high
+      shell: true
+      native_dependencies: true
+      fips: true
+
+    orchestrators:
+      - Kubernetes
+      - OpenShift
+
+    strengths:
+      - Enterprise support
+      - Long lifecycle
+      - FIPS capable
+
+# ------------------------
+# JAVA
+# ------------------------
+
+  - id: temurin
+
+    language: Java
+
+    registry: docker
+
+    image: eclipse-temurin
+
+    variants:
+
+      production:
+        - jre
+
+      development:
+        - jdk
+
+    supports:
+      enterprise: false
+      security: medium
+      shell: true
+      native_dependencies: true
+      fips: false
+
+    orchestrators:
+      - Docker
+      - Kubernetes
+
+    strengths:
+      - Official Eclipse Temurin
+      - LTS support
+
+# ------------------------
+# NODE
+# ------------------------
+
+  - id: node-official
+
+    language: Node.js
+
+    registry: docker
+
+    image: node
+
+    variants:
+
+      production:
+        - bookworm-slim
+
+      development:
+        - bookworm
+
+    supports:
+      enterprise: false
+      security: medium
+      shell: true
+      native_dependencies: true
+      fips: false
+
+    orchestrators:
+      - Docker
+      - Kubernetes
+
+    strengths:
+      - Official Node image
+
+# ------------------------
+# GO
+# ------------------------
+
+  - id: golang
+
+    language: Go
+
+    registry: docker
+
+    image: golang
+
+    variants:
+
+      development:
+        - latest
+
+    supports:
+      enterprise: false
+      security: medium
+      shell: true
+      native_dependencies: true
+      fips: false
+
+    orchestrators:
+      - Docker
+      - Kubernetes
+
+    strengths:
+      - Official Go compiler
+
+  - id: distroless-go
+
+    language: Go
+
+    registry: distroless
+
+    image: static
+
+    variants:
+
+      production:
+        - latest
+
+    supports:
+      enterprise: false
+      security: high
+      shell: false
+      native_dependencies: false
+      fips: false
+
+    orchestrators:
+      - Kubernetes
+
+    strengths:
+      - Extremely small
+      - Runtime only
+
+# ------------------------
+# .NET
+# ------------------------
+
+  - id: dotnet-runtime
+
+    language: .NET
+
+    registry: microsoft
+
+    image: dotnet/aspnet
+
+    variants:
+
+      production:
+        - 8.0
+
+    supports:
+      enterprise: true
+      security: high
+      shell: true
+      native_dependencies: true
+      fips: false
+
+    orchestrators:
+      - Docker
+      - Kubernetes
+
+    strengths:
+      - Microsoft supported
+
+  - id: dotnet-sdk
+
+    language: .NET
+
+    registry: microsoft
+
+    image: dotnet/sdk
+
+    variants:
+
+      development:
+        - 8.0
+
+    supports:
+      enterprise: true
+      security: high
+      shell: true
+      native_dependencies: true
+      fips: false
+
+    orchestrators:
+      - Docker
+
+    strengths:
+      - SDK included
