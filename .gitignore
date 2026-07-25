@@ -1,7 +1,7 @@
 # Python
 __pycache__/
 *.pyc
-
+env
 # Generated datasets
 dataset/train.jsonl
 dataset/test.jsonl
