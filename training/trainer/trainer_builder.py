@@ -70,9 +70,9 @@ def create_trainer(
 
             optim="adamw_8bit",
 
-            fp16=False,
+            fp16=True,
 
-            bf16=True,
+            bf16=False,
 
             report_to="none",
 
