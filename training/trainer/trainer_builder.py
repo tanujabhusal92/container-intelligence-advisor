@@ -64,10 +64,6 @@ def create_trainer(
                 TrainingConfig.LOGGING_STEPS,
 
 
-            save_steps=
-                TrainingConfig.SAVE_STEPS,
-
-
             optim="adamw_8bit",
 
             fp16=True,
