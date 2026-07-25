@@ -1,0 +1,12 @@
+unsloth
+transformers>=4.45.0
+trl
+datasets
+peft
+accelerate
+bitsandbytes
+sentencepiece
+protobuf
+scipy
+numpy
+pandas
