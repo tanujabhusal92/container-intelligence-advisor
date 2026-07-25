@@ -1,0 +1,50 @@
+instructions:
+
+  # General
+  - Recommend the best container base image for this application.
+  - Recommend the most suitable Docker base image.
+  - Suggest the best OCI base image.
+  - Select the optimal container image.
+  - Recommend an appropriate runtime image.
+
+  # Security
+  - Recommend the most secure container image.
+  - Suggest a secure production-ready image.
+  - Choose a container image with a minimal attack surface.
+  - Recommend a hardened container base image.
+  - Select the safest runtime image.
+
+  # Enterprise
+  - Recommend an enterprise-supported container image.
+  - Suggest a long-term supported container image.
+  - Choose an enterprise-grade base image.
+  - Recommend a production-certified image.
+  - Select a stable enterprise runtime.
+
+  # Kubernetes
+  - Recommend a Kubernetes-friendly container image.
+  - Suggest a container image optimized for Kubernetes.
+  - Choose the best image for Kubernetes deployment.
+  - Recommend a cloud-native runtime image.
+  - Select an image suitable for container orchestration.
+
+  # Performance
+  - Recommend a lightweight container image.
+  - Suggest a minimal production image.
+  - Choose a container image with a small footprint.
+  - Recommend a runtime optimized for performance.
+  - Select an efficient base image.
+
+  # Language specific
+  - Recommend a container image for this Python application.
+  - Recommend a Java runtime image.
+  - Suggest a Node.js production image.
+  - Recommend a Go runtime image.
+  - Recommend a .NET runtime image.
+
+  # Architecture
+  - Recommend the best base image for this workload.
+  - Which container image should I use?
+  - Help me choose a container base image.
+  - Select the best image for my application.
+  - Recommend the most appropriate runtime container.

@@ -33,6 +33,7 @@ class KnowledgeBase:
         self.images = {}
         self.scoring = {}
         self.constraints = {}
+        self.instructions = {}
 
     def _load_yaml(self, filename):
 
@@ -60,6 +61,8 @@ class KnowledgeBase:
 
         self.constraints = self._load_yaml("constraints.yaml")
 
+        self.instructions = self._load_yaml("instructions.yaml")
+
         return self
 
     def summary(self):
@@ -77,6 +80,8 @@ class KnowledgeBase:
         print(f"Registries    : {len(self.registries)}")
 
         print(f"Images        : {len(self.images.get('images', []))}")
+
+        print(f"Instructions  : {len(self.instructions.get('instructions', []))}")
 
         print("=" * 60)
 

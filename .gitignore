@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+
+# Generated datasets
+dataset/train.jsonl
+dataset/test.jsonl
+dataset/validation.jsonl
+
+# Training outputs
+outputs/
+checkpoints/
+merged_model/
+logs/
+
+# Hugging Face cache
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
