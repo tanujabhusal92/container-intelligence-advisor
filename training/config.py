@@ -77,9 +77,6 @@ class TrainingConfig:
     LOGGING_STEPS = 10
 
 
-    SAVE_STEPS = 100
-
-
 
     # -------------------------------------------------
     # Reproducibility
